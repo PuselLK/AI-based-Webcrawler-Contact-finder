@@ -1,0 +1,9 @@
+selenium>=4.14.0
+openai==1.9.0
+python-dotenv==1.0.0
+pandas~=2.1.2
+python-Levenshtein==0.23.0
+customtkinter~=5.2.1
+bs4~=0.0.1
+beautifulsoup4~=4.12.2
+numpy~=1.26.1

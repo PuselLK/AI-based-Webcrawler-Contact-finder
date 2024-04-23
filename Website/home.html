@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakt Finder</title>
+    <link rel="icon" href="Images/Logo.png" type="image/x-icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: "Lato", sans-serif
+        }
+    </style>
+</head>
+<body>
+<div class="topdiv">
+    <img class="topimage" src="Images/Schriftzug.png" alt="Hochbahn Logo">
+</div>
+<div class="titlediv">
+    <h1 class="titletitle">Kontakt Finder</h1>
+    <img class="titleimage" src="Images/titleimage.png" alt="Background">
+</div>
+<div class="searcharea">
+    <h1 class="question">Welche Website soll durchsucht werden?</h1>
+    <div class="container">
+        <form action="#">
+            <div class="input-file-container">
+                <input class="input-file" id="my-file" type="file">
+                <label tabindex="0" for="my-file" class="input-file-trigger"><i class="fa fa-upload"></i> Datei
+                    wählen</label>
+            </div>
+            <p class="file-return"></p>
+            <button class="submitbutton" type="submit"><i class="fa fa-wheelchair-alt"></i> Run</button>
+        </form>
+    </div>
+</div>
+
+<!-- Container for the tab buttons -->
+<div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'SimpleView')" id="defaultOpen">SIMPLE</button>
+    <button class="tablinks" onclick="openTab(event, 'ConsoleOutput')">ADVANCED</button>
+</div>
+
+<!-- Tab content for Simple View -->
+<div id="SimpleView" class="tabcontent">
+    <b>Status</b>
+    <p>Schritt 1: Seite mit Kontaktinformationen Finden</p>
+    <p>Schritt 2: Die passenden Kontakte rausfiltern</p>
+    <p>Schritt 3: Auf Sub-Seiten nach zusätzlichen informationen über die Kontakte suchen</p>
+    <p>Schritt 4: Datenexport</p>
+</div>
+
+<!-- Tab content for Console Output -->
+<div id="ConsoleOutput" class="tabcontent">
+    <b>Status</b>
+    <p>This is the Console Output content that dynamically updates.</p>
+</div>
+<a href="https://www.uni-hamburg.de/" target="_blank"><img class="UniLogo" src="Images/UHH_Logo.png" alt="UHH Logo"></a>
+<script src="switchTabs.js"></script>
+</body>
+<!--<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <p class="w3-medium">Powered by <a href="https://www.uni-hamburg.de/" target="_blank">Universität-Hamburg</a></p>
+</footer>-->
+</html>

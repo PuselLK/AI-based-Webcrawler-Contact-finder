@@ -1,0 +1,199 @@
+div.topdiv {
+    background-color: white;
+    width: 100%;
+    padding: 1%;
+}
+
+img.topimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: 10%;
+}
+
+img.titleimage {
+    width: 100%;
+    border-top: 3px solid transparent;
+    border-color: gray;
+}
+
+div.titlediv {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+h1.titletitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    font-weight: bold;
+}
+
+div.searcharea {
+    position: relative;
+    background-color: #d4d4d4;
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+}
+
+h1.question {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    font-weight: bold;
+}
+
+.input-file-container {
+    position: relative;
+    width: 270px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.js .input-file-trigger {
+    display: block;
+    padding: 14px 45px;
+    background: black;
+    color: #fff;
+    font-size: 20px;
+    transition: all .4s;
+    cursor: pointer;
+    border-radius: 40px;
+
+}
+
+.js .input-file {
+    position: relative;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.js .input-file:hover + .input-file-trigger,
+.js .input-file:focus + .input-file-trigger,
+.js .input-file-trigger:hover,
+.js .input-file-trigger:focus {
+    background: #a1a1a1;
+}
+
+.js .submitbutton:hover + .submitbutton,
+.js .submitbutton:focus + .submitbutton,
+.js .submitbutton:hover,
+.js .submitbutton:focus {
+    background: #a1a1a1;
+}
+
+.file-return {
+    margin: 0;
+    position: relative;
+}
+
+.file-return:not(:empty) {
+    margin: 1em 0;
+}
+
+.js .file-return {
+    font-style: italic;
+    font-size: .9em;
+    font-weight: bold;
+}
+
+.js .file-return:not(:empty):before {
+    content: "Ausgewählte Datei: ";
+    font-style: normal;
+    font-weight: normal;
+}
+
+button.submitbutton {
+    display: block;
+    padding: 14px 45px;
+    margin-top: 20px;
+    background: black;
+    color: #fff;
+    font-size: 20px;
+    transition: all .4s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/*My stuff starts here------------------------------------------------------*/
+
+/* Style the tab buttons */
+.tab {
+    overflow: hidden;
+    background-color: #d4d4d4;
+    padding-left: 40px;
+}
+
+/* Style the buttons inside the tab*/
+.tab button {
+    width: 245px;
+    height: 51px;
+    flex-shrink: 0;
+    border-radius: 40px 40px 0px 0px;
+    border-top: 5px solid #616161;
+    border-right: 5px solid #616161;
+    border-left: 5px solid #616161;
+    border-bottom: #d4d4d4;
+    background: grey;
+    color: #fff;
+    margin-right: -10px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.tab button.active {
+    background-color: #fff;
+    color: black;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+    color: black;
+    cursor: pointer;
+}
+
+/* Style the tab content /
+ */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: 3px solid #616161;
+    height: 208px;
+    overflow: auto;
+    font-weight: bold;
+    color: black;
+}
+
+img.UniLogo {
+    position: fixed;
+    bottom: 3%;
+    left: 94%;
+    width: 4%;
+    border-radius: 8px;
+    filter: brightness(75%);
+}
+
+img.UniLogo:hover {
+    animation-name: drehwurm;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+@keyframes drehwurm {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
